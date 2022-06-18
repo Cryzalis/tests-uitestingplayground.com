@@ -2,7 +2,7 @@ const {Builder, By,until} = require("selenium-webdriver");
 const expect = require("chai").expect;
 
 describe("Hidden Layers",function(){
-    it("Second button", async function(){
+    it.skip("Second button", async function(){
         const driver = new Builder().forBrowser("firefox").build();
         await driver.get("http://uitestingplayground.com/hiddenlayers");
 
