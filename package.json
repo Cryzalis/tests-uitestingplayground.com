@@ -1,0 +1,24 @@
+{
+  "name": "tests-uitestingplayground.com",
+  "version": "1.0.0",
+  "description": "tests for uitestingplayground with selenium(js)+mocha+chai",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --no-timeouts -parallel"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Cryzalis/tests-uitestingplayground.com.git"
+  },
+  "author": "Dmitry Maslo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Cryzalis/tests-uitestingplayground.com/issues"
+  },
+  "homepage": "https://github.com/Cryzalis/tests-uitestingplayground.com#readme",
+  "dependencies": {
+    "chai": "^4.3.6",
+    "mocha": "^10.0.0",
+    "selenium-webdriver": "^4.2.0"
+  }
+}
