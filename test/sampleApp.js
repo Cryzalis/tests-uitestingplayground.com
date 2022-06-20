@@ -2,7 +2,7 @@ const {Builder, By,Key,until} = require("selenium-webdriver");
 const expect = require("chai").expect;
 
 describe("Overlapped Element",function(){
-    it.skip("Fill in and submit the form. For successfull login use any non-empty user name and `pwd`", async function(){
+    it("Fill in and submit the form. For successfull login use any non-empty user name and `pwd`", async function(){
 
         const driver = new Builder().forBrowser("firefox").build();
         await driver.get("http://uitestingplayground.com/sampleapp");

@@ -2,7 +2,7 @@ const {Builder, By,until} = require("selenium-webdriver");
 const expect = require("chai").expect;
 
 describe("Text Input",function(){
-    it.skip("Record setting text into the input field and pressing the button", async function(){
+    it("Record setting text into the input field and pressing the button", async function(){
 
         const driver = new Builder().forBrowser("firefox").build();
         await driver.get("http://uitestingplayground.com/textinput?");

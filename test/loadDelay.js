@@ -2,7 +2,7 @@ const {Builder, By,until} = require("selenium-webdriver");
 const expect = require("chai").expect;
 
 describe("Load Delay",function(){
-    it.skip("wait to load", async function(){
+    it("wait to load", async function(){
         const driver = new Builder().forBrowser("firefox").build();
         await driver.get("http://uitestingplayground.com/");
 

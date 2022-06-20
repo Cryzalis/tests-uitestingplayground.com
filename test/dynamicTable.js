@@ -2,7 +2,7 @@ const {Builder, By,Key,until} = require("selenium-webdriver");
 const expect = require("chai").expect;
 
 describe("Dynamic Table",function(){
-    it.skip("For Chrome process get value of CPU load.  Compare it with value in the yellow label.", async function(){
+    it("For Chrome process get value of CPU load.  Compare it with value in the yellow label.", async function(){
 
         const driver = new Builder().forBrowser("firefox").build();
         await driver.get("http://uitestingplayground.com/dynamictable");

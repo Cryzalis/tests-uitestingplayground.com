@@ -2,7 +2,7 @@ const {Builder, By} = require("selenium-webdriver");
 const expect = require("chai").expect;
 
 describe("Non-Breaking Space",function(){
-    it.skip("Notice that the XPath does not work. Change the space between 'My' and 'Button' to a non-breaking space.", async function(){
+    it("Notice that the XPath does not work. Change the space between 'My' and 'Button' to a non-breaking space.", async function(){
 
         const driver = new Builder().forBrowser("firefox").build();
         await driver.get("http://uitestingplayground.com/nbsp");

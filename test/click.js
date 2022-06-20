@@ -2,7 +2,7 @@ const {Builder, By,until} = require("selenium-webdriver");
 const expect = require("chai").expect;
 
 describe("Click",function(){
-    it.skip("Bad button", async function(){
+    it("Bad button", async function(){
         const driver = new Builder().forBrowser("firefox").build();
         await driver.get("http://uitestingplayground.com/click");
 

@@ -2,7 +2,7 @@ const {Builder, By,Key,until} = require("selenium-webdriver");
 const expect = require("chai").expect;
 
 describe("Scrollbars",function(){
-    it.skip("Find a button in the scroll view and record button click.", async function(){
+    it("Find a button in the scroll view and record button click.", async function(){
 
         const driver = new Builder().forBrowser("firefox").build();
         await driver.get("http://uitestingplayground.com/scrollbars");

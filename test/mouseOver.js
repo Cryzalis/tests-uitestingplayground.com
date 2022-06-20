@@ -2,7 +2,7 @@ const {Builder, By} = require("selenium-webdriver");
 const expect = require("chai").expect;
 
 describe("Mouse Over",function(){
-    it.skip("Record 2 consecutive link clicks. Execute the test and make sure that click count is increasing by 2.", async function(){
+    it("Record 2 consecutive link clicks. Execute the test and make sure that click count is increasing by 2.", async function(){
 
         const driver = new Builder().forBrowser("firefox").build();
         await driver.get("http://uitestingplayground.com/mouseover");
