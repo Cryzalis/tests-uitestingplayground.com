@@ -1,4 +1,4 @@
-const {Builder, By,Key,until} = require("selenium-webdriver");
+const {Builder, By} = require("selenium-webdriver");
 const expect = require("chai").expect;
 
 describe("Visibility",function(){
@@ -6,9 +6,7 @@ describe("Visibility",function(){
 
         const driver = new Builder().forBrowser("firefox").build();
         await driver.get("http://uitestingplayground.com/visibility");
-
         await driver.findElement(By.id("hideButton")).click();
-
 
         let hideButtons = await driver.findElements(By.css("table button"));
         for (const button of hideButtons) {
