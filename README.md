@@ -14,7 +14,7 @@ $ npm install
 
 ### Requirements
 To install and run the project, you need [NodeJS](https://nodejs.org/) v8+.
-also you need https://github.com/mozilla/geckodriver/releases
+also you need webdriver https://github.com/mozilla/geckodriver/releases
 
 ## Testing
 
