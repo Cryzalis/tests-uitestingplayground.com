@@ -2,7 +2,7 @@ const {Builder, By,Key,until} = require("selenium-webdriver");
 const expect = require("chai").expect;
 
 describe("Visibility",function(){
-    it("In your testing scenario press Hide button. Determine if other buttons visible or not.", async function(){
+    it.skip("In your testing scenario press Hide button. Determine if other buttons visible or not.", async function(){
 
         const driver = new Builder().forBrowser("firefox").build();
         await driver.get("http://uitestingplayground.com/visibility");
@@ -17,6 +17,5 @@ describe("Visibility",function(){
             }
         }
 
-        driver.quit();
     });
 })
